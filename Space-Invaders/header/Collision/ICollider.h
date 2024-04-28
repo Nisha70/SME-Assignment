@@ -18,8 +18,8 @@ namespace Collision
         ICollider();
         virtual ~ICollider();
 
-        virtual const sf::Sprite& getColliderSprite() = 0;
-        virtual void onCollision(ICollider* other_collider) = 0;
+        virtual const sf::Sprite& getColliderSprite();
+        virtual void onCollision(ICollider* other_collider);
 
         void enableCollision();
         void disableCollision();
